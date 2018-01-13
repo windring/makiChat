@@ -1,0 +1,120 @@
+html,body,*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}*:focus{
+  outline:none;
+}html,body{
+  width: 100%;
+  height: 100%;
+}#lines{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}#lines{
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top:0;
+  left: 0;
+}#cav{
+  /*transform: scale3d(0,0,0);*/
+  background: #fff;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  left:0;
+  top:0;
+}#jill{
+  position: fixed;
+  top:41px;
+  left:41px;
+  border-radius: 18px;
+  width:720px;
+  height:640px;
+  background:none;
+  overflow: hidden;
+}#jill:before{
+  content: ' ';
+  position: absolute;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  background: #2233332e;
+  filter:Alpha(opacity=41);
+  /*filter: blur(10px);*/
+}#keri{
+  top:50px;
+  left:0;
+  right:0;
+  bottom:80px;
+  position: absolute;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-gap: 4.1px;
+  padding:0 30px;
+  filter: none;
+  opacity: 1;
+  overflow-y: scroll;
+}#keri::-webkit-scrollbar{
+  border-radius: 2px;
+  height:100%;
+  width:4.1px;
+}#keri::-webkit-scrollbar-button{
+  display: none;
+}#keri::-webkit-scrollbar-track{
+  display: none;
+}#keri::-webkit-scrollbar-track-piece{
+  border-radius: 2px;
+}#keri::-webkit-scrollbar-thumb{
+  background: #fff;
+  border-radius: 2px;
+}#keri::-webkit-scrollbar-conrner{
+  display: none;
+}#keri::-webkit-resize{
+  display: none;
+}#keri .name,#keri .content{
+  font-size:18px;
+  height:1.5em;
+  color:#223;
+}#kire{
+  position: absolute;
+  left:0;
+  right:0;
+  top:580px;
+  display: grid;
+  grid-template-columns: 2fr 5fr 2fr;
+  grid-gap: 10px;
+  padding:4.1px 30px;
+}#kire .l,#kire .c{
+  border:0;
+  background:none;
+  border-bottom:2px solid #fff;
+  font-size: 18px;
+  line-height: 1em;
+}#kire .r{
+  border:0;
+  background:#6cf;
+  color:#fff;
+  border-radius:4.1px;
+  text-align: center;
+  line-height: 1em;
+  font-size:18px;
+  padding:7.2px 0;
+  cursor: pointer;
+  transition:background 1s;
+}#kire .r:hover{
+  background: #6cc;
+}#dot{
+  position: absolute;
+  top:20px;
+  left:40px;
+  background: #6cf;
+  width:20px;
+  height:20px;
+  border-radius: 10px;
+  opacity: .41;
+  transition: background 1.41s;
+}

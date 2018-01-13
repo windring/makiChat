@@ -1,0 +1,16 @@
+{
+  "name": "chatJS",
+  "version": "1.0.0",
+  "description": "chat online dev",
+  "main": "./lib/index.js",
+  "scripts": {
+    "test": "dn test && dn build -e prod"
+  },
+  "author": {
+    "name": "baitieyi",
+    "email": "lika@assorted.pw",
+    "url": "http://assorted.pw"
+  },
+  "license": "MIT",
+  "devDependencies": {}
+}
