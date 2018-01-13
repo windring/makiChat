@@ -1,3 +1,3 @@
 # makiChat  
 online chat  
-test [http://windring.github.io/makiChat/](makiChat "")  
+test [makiChat](http://windring.github.io/makiChat/ "")  
