@@ -19,9 +19,10 @@ class reza2{
     this.cav=document.querySelector("#cav");
     this.bufferCvs=document.createElement('canvas');
     this.resize();
-    for(var i=0;i<500;i++)
+    for(var i=0;i<100;i++)
       this.val.particles.push(Particle.random());
     this.val.gravities.push(new Graviticle(3*window.innerWidth/4,3*window.innerHeight/4,0.1));
+    //requestAnimationFrame(this.loop);
     this.loop();
     return 0;
   }
@@ -72,6 +73,7 @@ class reza2{
     this.painter.beginPath();
     this.painter.drawImage(this.bufferCvs,0,0);
     this.painter.closePath();
+    //requestAnimationFrame("reza.loop");
     setTimeout("reza2.loop()",10);
   }
 };

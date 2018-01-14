@@ -13,8 +13,10 @@ BmobSocketIo.onUpdateTable=function(tablename,data){
 }
 function prependMsg(usr,msg){
   $("#keri").prepend(
-    $("<div>").attr("class","name").text(usr),
-    $("<div>").attr("class","content").text(msg)
+    $("<div>").attr("class","yo").prepend(
+      $("<div>").attr("class","name").text(usr),
+      $("<div>").attr("class","content").text(msg)
+    )
   );
 }
 function sendMsg(usr,msg){
@@ -46,7 +48,6 @@ function pingdot(){
   $("#dot").css("background","red");
   setTimeout('$("#dot").css("background","#6cf")',2141);
 }
-window.sendMsg=()=>sendMsg();
 window.getAll=()=>getAll();
 window.onload=()=>{
   getAll();
